@@ -14,6 +14,7 @@ create table aluno (
     matricula_data timestamp --> Timestamp, representa data e hora, '2005-05-19 17:19:00'.
 );
 
+--> Inserindo dados na tabela 'aluno'.
 
 insert into aluno(nome, --> Passamos o nome da tabela, 'aluno', e os campos que queremos preencher.
     cpf,
@@ -38,6 +39,7 @@ insert into aluno(nome, --> Passamos o nome da tabela, 'aluno', e os campos que 
     '2023-05-27 22:30:00' 
 );
 
+--> Consultando os dados da tabela 'aluno'.
 
 select * from aluno --> Usamos o (*), quando queremos trazer todas as informações da tabela 'aluno'.
 
