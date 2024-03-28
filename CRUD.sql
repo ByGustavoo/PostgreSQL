@@ -50,7 +50,7 @@ select * from aluno --> Usamos o (*), quando queremos trazer todas as informaç�
 update aluno set dinheiro = 1000.90 where id = 1
 	
 	
---> Para deletar um dado, passamos o nome da tabela 'aluno', e estabelecemos qual dado será atualizado 
+--> Para deletar um dado, passamos o nome da tabela 'aluno', e estabelecemos qual dado será deletado
 --> por meio do 'where' e do 'id', nesse caso irá deletar todas as informações do aluno de id = 1.
 
 
