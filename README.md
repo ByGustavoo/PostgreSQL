@@ -1,6 +1,6 @@
 # PostgreSQL
 
-## Conjuntos de Scripts simples para realizar usando o PostgreSQL.
+## Conjuntos simples de scripts para serem executados com o objetivo de aprendizado utilizando PostgreSQL.
 
 
 ## 🚀 Ferramentas utilizadas:
