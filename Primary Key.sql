@@ -1,4 +1,4 @@
-Primary Key, não pode ser nula e tem que ser única.
+-- Primary Key, não pode ser nula e tem que ser única.
 
 --> Criando a tabela 'curso'.
     
