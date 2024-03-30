@@ -120,6 +120,7 @@ select * from aluno where ativo is null
 
 select * from aluno where nome like 'G%' and cpf is not null
 
+  
 -- E por fim, temos o operador lógico 'OR', usamos ele quando queremos que uma das condições sejam verdadeiras, por exemplo,  
 -- onde o nome começa com a letra 'G%' ou que o cpf esteja cadastrado.
 
