@@ -89,9 +89,6 @@ cross join curso
 -- Para poupar todo esse trabalho, podemos usar o 'CASCADE' quando criamos a tabela, assim, quando deletar um dado que está vinculado a outra tabela, 
 -- esse dado será automaticamente deletado de todas as tabelas que esse dado está vinculado.
 
-
-select * from aluno_curso;
-
 create table aluno_curso(
 	id_aluno int,
 	id_curso int,
@@ -112,3 +109,5 @@ create table aluno_curso(
 	foreign key (id_aluno) references aluno (id) on update cascade,
 	foreign key (id_curso) references curso (id)
 );
+
+update aluno_curso set id = 17 where id_aluno = 1;
