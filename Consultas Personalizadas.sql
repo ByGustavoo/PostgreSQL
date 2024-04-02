@@ -6,7 +6,7 @@
 -- Lembrando que o 'as' é opcional, se passar com ou sem o 'as', o script retornará um SELECT personalizado do mesmo jeito, 
 -- exemplo: 'SELECT nome AS nomeAluno' ou 'SELECT nome nomeAluno'.
 
--- Exemplo usando o 'as'.
+--> Exemplo usando o 'as'.
 
 select
 	nome as nomeAluno,
@@ -16,7 +16,7 @@ from
 	aluno;
 
 
--- Exemplo sem usar o 'as'.
+--> Exemplo sem usar o 'as'.
 
 select
 	nome nomeAluno,
