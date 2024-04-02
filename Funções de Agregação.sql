@@ -2,9 +2,9 @@
 
 CREATE TABLE funcionarios(
     id SERIAL PRIMARY KEY,       -- Coluna de ID, que é um número de série único para cada funcionário
-    matricula VARCHAR(10),      -- Coluna de matrícula, que é um código de identificação único para cada funcionário, com até 10 caracteres
-    nome VARCHAR(255),          -- Coluna de nome, que armazena o primeiro nome do funcionário, com até 255 caracteres
-    sobrenome VARCHAR(255)      -- Coluna de sobrenome, que armazena o sobrenome do funcionário, com até 255 caracteres
+    matricula VARCHAR(10),       -- Coluna de matrícula, que é um código de identificação único para cada funcionário, com até 10 caracteres
+    nome VARCHAR(255),           -- Coluna de nome, que armazena o primeiro nome do funcionário, com até 255 caracteres
+    sobrenome VARCHAR(255)       -- Coluna de sobrenome, que armazena o sobrenome do funcionário, com até 255 caracteres
 );
 
 
@@ -27,7 +27,7 @@ INSERT INTO funcionarios (matricula, nome, sobrenome) VALUES ('M006', 'Alberto',
 
 -- Retorna o número total de registros na tabela 'funcionarios', (COUNT), retorna a soma de todos os valores do ID da tabela 'funcionarios', (SUM), 
 -- retorna o valor máximo do ID na tabela 'funcionarios', (MAX), retorna o valor mínimo do ID na tabela 'funcionarios', (MIN), retorna a média 
--- arredondada com duas casas decimais, do ID na tabela 'funcionarios', dividindo o 'SUM' com o 'COUNT'.
+-- arredondada com duas casas decimais (ROUND), do ID na tabela 'funcionarios', dividindo o 'SUM' com o 'COUNT'.
 
 SELECT COUNT(id) AS total_registros,
        SUM(id) AS soma_ids,
