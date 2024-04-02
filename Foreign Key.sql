@@ -12,9 +12,9 @@ insert into curso (curso) values ('Java');
 insert into curso (curso) values ('Angular');
 insert into curso (curso) values ('Spring');
 
--- Criando a tabela 'aluno_curso' com chave estrangeira, ou seja, o campo 'id_aluno' está referenciando 
--- a tabela 'aluno' no campo 'id', e a outra chave estrangeira 'id_curso', está referenciando a 
--- tabela 'curso' no campo 'id'.
+
+-- Criando a tabela 'aluno_curso' com chave estrangeira, ou seja, o campo 'id_aluno' está referenciando a tabela 'aluno' no campo 'id', e a 
+-- outra chave estrangeira 'id_curso', está referenciando a tabela 'curso' no campo 'id'.
 
 create table aluno_curso(
 	id_aluno int,
@@ -97,7 +97,9 @@ create table aluno_curso(
 	foreign key (id_curso) references curso (id)
 );
 
+
 delete from aluno_curso where id_aluno = 1;
+
 
 -- Isso também se aplica quando queremos atualizar uma tabela que possui um dado que está vinculado a outras tabelas, ou seja, chave estrangeira. 
 -- Para resolver esse problema temos que fazer a mesma coisa que fizemos com o 'DELETE'.
