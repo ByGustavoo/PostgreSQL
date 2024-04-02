@@ -19,12 +19,11 @@ ORDER BY nome;
 -- Para filtrar usando funções de agrupamento usaremos o (HAVING) após o (GROUP BY), que é um comando de filtro assim como o (WHERE). A diferença da 
 -- filtragem com (HAVING) é a possibilidade de utilizar as funções de agrupamento (COUNT, SUM, MIN, MAX, AVG), enquanto o (WHERE) filtra a partir dos campos.
 
-
 -- Seleciona os nomes dos cursos que não têm nenhum aluno matriculado
 -- Utiliza LEFT JOIN para combinar as tabelas 'curso' e 'aluno_curso' com base no curso_id
--- Utiliza LEFT JOIN para combinar as tabelas 'aluno' e 'aluno_curso' com base no aluno_id
--- Agrupa os resultados pelo nome do curso
--- Filtra apenas os cursos que não têm nenhum aluno matriculado
+-- Utiliza LEFT JOIN para combinar as tabelas 'aluno' e 'aluno_curso' com base no aluno_id 
+-- Agrupa os resultados pelo nome do curso (GROUP BY)
+-- Filtra apenas os cursos que não têm nenhum aluno matriculado (HAVING)
 
 SELECT curso_aluno 
 FROM curso 
