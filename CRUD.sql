@@ -53,13 +53,13 @@ insert into aluno(nome,
 select * from aluno 
 
 	
--- Para atualizar um dado, passamos o nome da tabela 'aluno', o campo que será atualizado, utilizando o 'set', o campo 'dinheiro', o valor '1000.90' 
--- e estabelecemos qual dado será atualizado por meio do 'where' e do 'id'.
+-- Para atualizar um dado, passamos o nome da tabela 'aluno', o campo que será atualizado, utilizando o (SET), o campo 'dinheiro', o valor '1000.90' 
+-- e estabelecemos qual dado será atualizado por meio do (WHERE) e do 'id'.
 
 update aluno set dinheiro = 1000.90 where id = 1
 	
 	
--- Para deletar um dado, passamos o nome da tabela 'aluno', e estabelecemos qual dado será deletado por meio do 'where' e do 'id', 
+-- Para deletar um dado, passamos o nome da tabela 'aluno', e estabelecemos qual dado será deletado por meio do (WHERE) e do 'id', 
 -- nesse caso irá deletar todas as informações do aluno de id = 1.
 
 delete from aluno where id = 1
