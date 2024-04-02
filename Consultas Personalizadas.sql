@@ -1,9 +1,9 @@
 -- Pesquisa personalizada
 
--- Quando queremos retornar um select com os nomes dos campos personalizados, utilizamos um alias 'as', que consiste em passar o nome do campo que 
--- queremos no select 'nome' e em seguinda passamos o nome que queremos que ele retorne de maneira personalizada como por exemplo, 'as nomeAluno'.
+-- Quando queremos retornar um SELECT com os nomes dos campos personalizados, utilizamos um alias 'as', que consiste em passar o nome do campo que 
+-- queremos no SELECT 'nome' e em seguinda passamos o nome que queremos que ele retorne de maneira personalizada como por exemplo, 'as nomeAluno'.
 
--- Lembrando que o 'as' é opcional, se passar com ou sem o 'as', o script retornará um select personalizado do mesmo jeito, 
+-- Lembrando que o 'as' é opcional, se passar com ou sem o 'as', o script retornará um SELECT personalizado do mesmo jeito, 
 -- exemplo: 'SELECT nome AS nomeAluno' ou 'SELECT nome nomeAluno'.
 
 -- Exemplo usando o 'as'.
