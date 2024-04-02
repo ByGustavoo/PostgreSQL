@@ -65,7 +65,7 @@ update aluno set dinheiro = 1000.90 where id = 1
 delete from aluno where id = 1
 
 
--- Ao invés de retornar todos os campos utilizando o (*), podemos passar o nome das colunas que queremos retornar no select, 
+-- Ao invés de retornar todos os campos utilizando o (*), podemos passar o nome das colunas que queremos retornar no SELECT, 
 -- passando o nome de cada uma delas.
 	
 select nome, cpf, data_nascimento from aluno;
