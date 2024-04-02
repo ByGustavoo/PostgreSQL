@@ -1,5 +1,5 @@
--- Para retornar um dado específico, utilizamos o 'where' com o campo que queremos pesquisar 'nome', o operador ( = ), que pesquisa 
--- exatamente como o dado está cadastrado no banco, por exemplo (where nome = 'Giovanna'). Se tentar pesquisar um dado que não está 
+-- Para retornar um dado específico, utilizamos o (WHERE) com o campo que queremos pesquisar 'nome', o operador ( = ), que pesquisa 
+-- exatamente como o dado está cadastrado no banco, por exemplo (WHERE nome = 'Giovanna'). Se tentar pesquisar um dado que não está 
 -- cadastrado, ou de algum modo diferente de como está cadastrado no banco, não irá retornar nada.
 
 select nome from aluno where nome = 'Giovanna'
@@ -15,7 +15,7 @@ select nome from aluno where nome <> 'Giovanna'
 
 
 -- Outra maneira de pesquisar um dado específico, é utilizar o 'LIKE', usando o caractere ( _ ). Se quiser pesquisar um nome onde não sabe 
--- a primeira letra do nome, coloque o caractere ( _ ) e o resto do nome, por exemplo, quero retornar um nome que o final seja 'iovanna', use 
+-- a primeira letra do nome, utilize o caractere ( _ ) e o resto do nome, por exemplo, para retornar um nome que o final seja 'iovanna', use 
 -- o caractere (' _iovanna '), dessa maneira irá retornar o nome 'Giovanna'. Do mesmo jeito que é possível fazer isso no meio do nome, 
 -- por exemplo, ('Gio_anna'). Lembrando que esse caractere substitui somente uma única letra.
 
@@ -27,7 +27,7 @@ select nome from aluno a where nome like '_iovanna'
 select nome from aluno a where nome like 'Gio_anna'
 
 
--- Também é possível negar essa pesquisa, falando para trazer todos os dados que sejam diferentes dos digitados utilizando o 'NOT LIKE', 
+-- Também é possível negar essa consulta, falando para trazer todos os dados que sejam diferentes dos digitados, utilizando o 'NOT LIKE', 
 -- assim irá retornar todos os dados que são diferentes dos digitados.
 
 --> No começo do nome
@@ -37,9 +37,9 @@ select nome from aluno a where nome not like '_iovanna'
 select nome from aluno a where nome not like 'Gio_anna'
 
 
--- Mais uma maneira de pesquisar de formas personalizadas é utilizando o caractere ( % ), que ao contrário do ( _ ), esse caractere já substitui 
--- tudo que for necessário, por exemplo, se quiser pesquisar todos os nomes que começam com a letra 'G', use o 'G%', assim irá retornar todos os nomes 
--- que começam com a letra 'G', do mesmo jeito que posso pesquisar os nomes que terminam com a letra '%a'.
+-- Mais uma maneira de consultar de formas personalizadas é utilizando o caractere ( % ), que ao contrário do ( _ ), esse caractere já substitui 
+-- tudo que for necessário, por exemplo, se quiser pesquisar todos os nomes que começam com a letra 'G', utilize o 'G%', assim irá retornar todos os nomes 
+-- que começam com a letra 'G', do mesmo jeito que pode pesquisar os nomes que terminam com a letra '%a'.
 
 -- Com espaços entre os nomes, ('% %'), exemplo, o nome 'Guru do Himalaia', que possui espaços entre as palavras.
 -- Sem espaços entre os nomes, ('%%'), irá retornar todos os nomes cadastrados.
